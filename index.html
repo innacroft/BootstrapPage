@@ -10,33 +10,32 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-spy ="scroll" data-target=".nav-item"  data-offset=1 > 
   
 <!--header-->
-<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" 
-    aria-expanded="false" aria-label="Toggle navigation">
+    
+    <a class="navbar-brand" href="#"><img src="images/logo_platzi.webp" alt="">Conf Hawaii</a>
+    <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="images/logo_platzi.webp" alt="">Conf Hawaii</a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">La conferencia </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#main">La conferencia </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Los oradores </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#speakers">Los speakers </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Lugar y fecha </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#place-time">Lugar y fecha </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Conviertete en orador </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#conviertete-speaker">Conviertete en speaker </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link text-platzi " href="#">Comprar tiquetes </a>
+        <li class="nav-item">
+          <a class="nav-link text-platzi " href="#" data-toggle="modal" data-target="#modalCompra">Comprar tiquetes </a>
         </li>
       </div>
     </ul>
@@ -63,12 +62,12 @@
                   <h1>Platziconf Hawaii</h1>
                   <p class="d-none d-md-block">Platziconf llega por primera vez a Hawaii!. 
                     Un evento para compartir conocimiento y experiencias con nuestra comunidad 
-                    Ven a conocer miembros del team Platzi y otros estudiantse y a los oradores de primer nivel que tenemos para ti. 
+                    Ven a conocer miembros del team Platzi y otros estudiantse y a los speakers de primer nivel que tenemos para ti. 
                     Te esperamos!
                   </p>
-                  <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                  <button type="button" class="btn btn-outline-light">Quiero ser speaker</button>
 
-                  <button type="button" class="btn btn-success btn-platzi">Comprar tiquetes</button>
+                  <button type="button" class="btn  btn-platzi " data-toggle="modal" data-target="#modalCompra" >Comprar tiquetes</button>
                 </div>
               </div>
             </div>
@@ -84,15 +83,19 @@
           <div class="row">
             <div class="col text-center text-uppercase">
               <small>Conoce a los</small>
-              <h2>oradores</h2>
+              <h2>speakers</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="card">
-                <img src="images/speaker1.png" class="card-img-top" alt="speaker1">
+                <img src="images/speaker1.png"  class="card-img-top" alt="speaker1">
                 <div class="card-body">
-                  <h5 class="card-title">Sacha Romero</h5>
+                  <div class="badges"> 
+                    <span class="badge badge-warning"> Javascript</span>
+                    <span class="badge badge-info"> React</span>
+                  </div>
+                  <h5 class="card-title mb-0">Sacha Romero</h5>
                   <p class="card-text">Cras luctus diam quis justo bibendum blandit. Nunc quam sem, maximus varius porta nec, elementum id purus. </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -102,7 +105,11 @@
               <div class="card">
                 <img src="images/speaker2.jpg" class="card-img-top" alt="speaker2" >
                 <div class="card-body">
-                  <h5 class="card-title">Sacha Romero</h5>
+                  <div class="badges"> 
+                    <span class="badge badge-warning"> Javascript</span>
+                    <span class="badge badge-info"> React</span>
+                  </div>
+                  <h5 class="card-title mb-0">Sacha Romero</h5>
                   <p class="card-text">Cras luctus diam quis justo bibendum blandit. Nunc quam sem, maximus varius porta nec, elementum id purus. </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -112,7 +119,11 @@
               <div class="card">
                 <img src="images/speaker3.png" class="card-img-top" alt="speaker3">
                 <div class="card-body">
-                  <h5 class="card-title">Sacha Romero</h5>
+                  <div class="badges"> 
+                    <span class="badge badge-warning"> Javascript</span>
+                    <span class="badge badge-info"> React</span>
+                  </div>
+                  <h5 class="card-title mb-0">Sacha Romero</h5>
                   <p class="card-text">Cras luctus diam quis justo bibendum blandit. Nunc quam sem, maximus varius porta nec, elementum id purus. </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -122,7 +133,11 @@
               <div class="card">
                 <img src="images/speaker4.png" class="card-img-top" alt="speaker4">
                 <div class="card-body">
-                  <h5 class="card-title">Sacha Romero</h5>
+                  <div class="badges"> 
+                    <span class="badge badge-warning"> Javascript</span>
+                    <span class="badge badge-react"> React</span>
+                  </div>
+                  <h5 class="card-title mb-0">Sacha Romero</h5>
                   <p class="card-text">Cras luctus diam quis justo bibendum blandit. Nunc quam sem, maximus varius porta nec, elementum id purus. </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -131,6 +146,77 @@
           </div>
         </div>
       </section>
+
+<!--lugar y fecha-->
+<section id="place-time">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-12 col-lg-6 pl-0 pr-0">
+        <img src="images/honolulu.jpg" alt="Honolulu"> 
+      </div>
+      <div class="col col-12 col-lg-6 pt-4 pb-4">
+        <h2 class="mt-2">Honolulu - Octubre 2025</h2>
+        <p>Honolulu u Honolulú2​ es la capital y localidad más grande del estado de Hawái, 
+          en los Estados Unidos.nota 1​ Honolulu es la más sureña de entre las principales ciudades estadounidenses. 
+          Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y 
+          el condado de Honolulu han formado una ciudad-condado 
+          consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).</p>
+          <a href="https://es.wikipedia.org/wiki/Honolulu" class="btn btn-outline-light">Conoce más</a>
+        </div>
+    </div>
+  </div>
+
+</section>
+<!--convierteten speaker-->
+
+<section id= "conviertete-speaker">
+  <div class="container">
+    <div class="row">
+      <div class="col text-uppercase text-center">
+        <small>conviértete en </small>
+        <h2>speaker</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        Anótate como orador para dar una  <abbr data-toggle="tooltip" title="Charlas de 5 minutos"> charla ignite</abbr> . 
+        Cuéntanos de que quieres hablar
+      </div>
+    </div>
+    <div class="row">
+      <div class="col pb-2 col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="form-group form-row">
+            <div class="col">
+              <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+              <small class="form-text text-muted">
+                Recuerda incluir un título para tu charla
+              </small>
+            </div>
+          </div>
+          <div class="form-group form-row">
+            <div class="col-12 col-lg-12 ">
+        <button type="submit"class="btn btn-platzi btn-block">Enviar</button>
+          </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
     <!-- footer-->
     <footer id="footer"class="pb-4 pt-4">
@@ -157,12 +243,52 @@
         </div>
       </div>
     </footer>
+<!--modal-->
+<!-- Button trigger modal -->
 
+<!-- Modal -->
+<div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tiquetes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-row">
+            <div class="form-group col">
+              <div class="input-group mb-3">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div> 
+            </div>
+          </div>
+        </form>
+        <!--alerta-->
+        <div class="alert alert-warning" role="alert">
+          Recibirás un mail de confirmación si sales sorteado.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-platzi">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 💜 💜
 
 #### Description
-Webpage of a false conference made with bootstrap 
+Webpage of a fake conference made with bootstrap 
 
 #### Technologies
 - CSS
@@ -10,10 +10,11 @@ Webpage of a false conference made with bootstrap
 - Bootstrap
 
 #### PAGE
-![](https://github.com/innacroft/flask/blob/master/app/static/images/login.PNG)
-![](https://github.com/innacroft/flask/blob/master/app/static/images/login.PNG)
-![](https://github.com/innacroft/flask/blob/master/app/static/images/login.PNG)
-
+![](https://github.com/innacroft/BootstrapPage/blob/gh-pages/images/conferencia.PNG)
+![](https://github.com/innacroft/BootstrapPage/blob/gh-pages/images/conferencias.PNG)
+![](https://github.com/innacroft/BootstrapPage/blob/gh-pages/images/losspeakers.PNG)
+![](https://github.com/innacroft/BootstrapPage/blob/gh-pages/images/conviertetespeaker.PNG)
+![](https://github.com/innacroft/BootstrapPage/blob/gh-pages/images/comprartiquetes.PNG)
 
 #### Other resources
 - Platzi: https://platzi.com/
